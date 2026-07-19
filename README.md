@@ -14,9 +14,6 @@
 - [API Endpoints](#api-endpoints)
 - [Project Structure](#project-structure)
 - [Development Setup](#development-setup)
-- [Contributors](#contributors)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 📝 Description
 
