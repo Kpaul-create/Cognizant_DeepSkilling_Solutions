@@ -8,12 +8,9 @@
 - [Key Features](#key-features)
 - [Use Cases](#use-cases)
 - [Tech Stack](#tech-stack)
-- [Architecture](#architecture)
 - [Quick Start](#quick-start)
 - [Key Dependencies](#key-dependencies)
-- [API Endpoints](#api-endpoints)
 - [Project Structure](#project-structure)
-- [Development Setup](#development-setup)
 
 ## 📝 Description
 
@@ -35,17 +32,6 @@ Cognizant_DeepSkilling_Solutions is a structured learning repository designed to
 ## 🛠️ Tech Stack
 
 ![Java (Maven)](https://img.shields.io/badge/Java%20(Maven)-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-
-## 🏗️ Architecture
-
-A high-level view of how the main pieces fit together:
-
-```mermaid
-flowchart TD
-    User["👤 User / Browser"]
-    API["⚙️ API Server"]
-    User --> API
-```
 
 ## ⚡ Quick Start
 
@@ -70,37 +56,13 @@ spring-boot-starter-web: managed
 spring-boot-starter-test: managed
 ```
 
-## 🌐 API Endpoints
-
-Detected endpoints (best-effort scan):
-
-```
-GET env
-GET /
-```
-
 ## 📁 Project Structure
 
 ```
 .
 ├── .mvn
-│   └── wrapper
-│       ├── maven-wrapper.jar
-│       └── maven-wrapper.properties
 ├── DeepSkill_Week 2,3,4
 │   ├── Spring Rest Practice
-│   │   └── demo
-│   │       ├── .mvn
-│   │       │   └── wrapper
-│   │       │       └── ...
-│   │       ├── mvnw
-│   │       ├── mvnw.cmd
-│   │       ├── pom.xml
-│   │       └── src
-│   │           ├── main
-│   │           │   └── ...
-│   │           └── test
-│   │               └── ...
 │   ├── W2-PLSQL
 │   │   ├── Control Structure
 │   │   │   ├── SCENARIO_1_OUTPUT.jpg
@@ -128,167 +90,32 @@ GET /
 │   │       └── xml
 │   ├── W3_Spring Core, Maven
 │   │   ├── Configuring Basic Spring Application
-│   │   │   ├── Book.java
-│   │   │   ├── BookController.java
-│   │   │   ├── BookRepository.java
-│   │   │   ├── LibraryManagementApplication.java
-│   │   │   ├── applications.properties
-│   │   │   ├── pom.xml
-│   │   │   └── target
-│   │   │       ├── LibraryManagement-1.0.0.jar
-│   │   │       └── maven-archiver
-│   │   │           └── ...
 │   │   ├── Configuring the Spring IoC Container
-│   │   │   ├── BookRepository.java
-│   │   │   ├── BookService.java
-│   │   │   ├── MainApp.java
-│   │   │   └── applicationContext.xml
 │   │   ├── Creating & Configuring a Maven Project
-│   │   │   ├── pom.xml
-│   │   │   └── target
-│   │   │       ├── LibraryManagement-1.0-SNAPSHOT.jar
-│   │   │       └── maven-archiver
-│   │   │           └── ...
 │   │   ├── Creating a Spring Boot Application
-│   │   │   ├── Book.java
-│   │   │   ├── BookController.java
-│   │   │   ├── BookRepository.java
-│   │   │   ├── LibraryManagementApplication.java
-│   │   │   └── pom.xml
 │   │   ├── Implementing Constructor & Setter Injection
-│   │   │   ├── BookRepository.java
-│   │   │   ├── BookService.java
-│   │   │   ├── LibraryManagementApplication.java
-│   │   │   └── applicationContext.xml
 │   │   └── Implementing Dependency Injection
-│   │       ├── BookRepository.java
-│   │       ├── BookService.java
-│   │       ├── LibraryManagementApplication.java
-│   │       └── applicationContext.xml
 │   ├── W3_Spring Data JPA
 │   │   ├── Add a new country
-│   │   │   ├── Body.txt
-│   │   │   ├── Get_all_country.txt
-│   │   │   ├── POST_request.txt
-│   │   │   └── test terminal.txt
 │   │   ├── Demonstrate implementation of OR Mapping
-│   │   │   ├── CityEntity.java
-│   │   │   ├── Country.java
-│   │   │   ├── CountryController.java
-│   │   │   ├── CountryRepository.java
-│   │   │   └── CountryService.java
 │   │   ├── Demonstrate implementation of Query Methods feature of Spring Data JPA
-│   │   │   ├── UserController.java
-│   │   │   ├── UserRepository.java
-│   │   │   ├── application.properties
-│   │   │   ├── pom.xml
-│   │   │   └── target
-│   │   │       ├── maven-archiver
-│   │   │       │   └── ...
-│   │   │       └── spring-data-jpa-quick-1.0.0.jar
 │   │   ├── Difference between JPA, Hibernate and Spring Data JPA
-│   │   │   ├── Hibernate.txt
-│   │   │   ├── JPA (Java Persistence API).txt
-│   │   │   └── Spring Data JPA.txt
 │   │   ├── Find a country based on country code
-│   │   │   ├── CountryController.java
-│   │   │   ├── CountryRepository.java
-│   │   │   ├── CountryService.java
-│   │   │   └── Countryupdate.java
 │   │   ├── Implement services for managing Country
-│   │   │   ├── Country.java
-│   │   │   ├── CountryController.java
-│   │   │   ├── CountryRepo.java
-│   │   │   └── CountryService.java
 │   │   └── Spring Data JPA - Quick Example
 │   │       └── SpringDataJpaQuickApplication.java
 │   └── W4_Spring REST using Spring Boot 3
 │       ├── Create a Spring Web Project using Maven
-│       │   ├── Build command
-│       │   ├── HelloController.java
-│       │   ├── SpringLearnApplication.java
-│       │   ├── SpringLearnApplicationTests.java
-│       │   ├── application.properties
-│       │   ├── pom.xml
-│       │   └── target
-│       │       ├── maven-archiver
-│       │       │   └── ...
-│       │       ├── spring-learn-0.0.1-SNAPSHOT.jar
-│       │       └── spring-learn-0.0.1-SNAPSHOT.jar.original
 │       ├── Create authentication service that returns JWT
-│       │   ├── AuthController.java
-│       │   ├── JwtUtil.java
-│       │   ├── SecurityConfig.java
-│       │   ├── SpringLearnApplication.java
-│       │   ├── Test
-│       │   ├── application.properties
-│       │   └── pom.xml
 │       ├── Hello World RESTful Web Service
-│       │   ├── HelloController.java
-│       │   ├── Set port
-│       │   ├── SpringLearnApplication.java
-│       │   └── output
 │       ├── REST - Country Web Service
-│       │   ├── Country.java
-│       │   ├── CountryController.java
-│       │   ├── Test
-│       │   ├── application.properties
-│       │   ├── country.xml
-│       │   └── main.java
 │       ├── REST - Get country based on country code
-│       │   ├── CountryController.java
-│       │   ├── CountryService.java
-│       │   ├── CountryServiceImpl.java
-│       │   ├── SpringLearnApplication.java
-│       │   ├── Test
-│       │   ├── application.properties
-│       │   └── country.xml
 │       └── Spring Core – Load Country from Spring Configuration XML
-│           ├── SpringLearnApplication.java
-│           ├── application.properties
-│           ├── date-format.xml
-│           └── run
 ├── React_SP,Week 6,7
 │   ├── Skillspring_module
-│   │   ├── DeveloperBios-API
-│   │   │   └── DeveloperBios-API
-│   │   │       ├── app.js
-│   │   │       ├── break.txt
-│   │   │       ├── developers.json
-│   │   │       ├── models
-│   │   │       │   └── ...
-│   │   │       ├── package.json
-│   │   │       ├── routes
-│   │   │       │   └── ...
-│   │   │       ├── schema.js
-│   │   │       └── views
-│   │   │           └── ...
 │   │   ├── developer-bios
-│   │   │   └── developer-bios
-│   │   │       ├── break
-│   │   │       ├── package.json
-│   │   │       ├── public
-│   │   │       │   └── ...
-│   │   │       └── src
-│   │   │           └── ...
 │   │   ├── developer-bios tests-completed
-│   │   │   └── developer-bios
-│   │   │       ├── break
-│   │   │       ├── package.json
-│   │   │       ├── public
-│   │   │       │   └── ...
-│   │   │       └── src
-│   │   │           └── ...
 │   │   └── reakt
-│   │       ├── eslint.config.mjs
-│   │       ├── package.json
-│   │       ├── public
-│   │       │   ├── favicon.ico
-│   │       │   ├── index.html
-│   │       │   ├── logo192.png
-│   │       │   ├── logo512.png
-│   │       │   ├── manifest.json
-│   │       │   └── robots.txt
 │   │       └── src
 │   │           ├── App.css
 │   │           ├── App.js
@@ -557,10 +384,3 @@ GET /
 │       └── Verify master branch is clean.txt
 └── package.json
 ```
-
-## 🛠️ Development Setup
-
-### Node.js / JavaScript
-1. Install Node.js (v18+ recommended)
-2. Install dependencies: `npm install` (or `yarn` / `pnpm install` / `bun install`)
-3. Start the dev server: see the **Quick Start** above
